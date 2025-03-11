@@ -8,8 +8,8 @@ function Header() {
 
 
     return (
-        <ul className="flex items-center justify-center  text-lg mb-8 mt-6">
-            <div role="tablist" className="tabs tabs-box bg-neutral-content">
+        <ul className="flex items-center justify-end sm:justify-center  text-lg mb-8 mt-6">
+            <div role="tablist" className="tabs tabs-sm sm:tabs-md tabs-box bg-neutral-content">
                 <Link role="tab" className={"tab " + (pathname == "/search" ? " tab-active" : "")} to={"/search"}>Search
                     Recipes</Link>
                 <Link role="tab" className={"tab " + (pathname == "/" ? " tab-active" : "")} to={"/"}>See all</Link>
