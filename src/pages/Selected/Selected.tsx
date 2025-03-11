@@ -12,11 +12,11 @@ function Selected() {
             {
                 selectedItems.length > 0 ?
                     <div>
-                        <div className={"text-4xl mb-4 mt-6 font-semibold"}>Selected items</div>
+                        <div className={"text-4xl mb-4 mt-6 font-semibold"}>Selected ingredients</div>
 
                         <SelectedList meals={selectedItems}/>
 
-                        <div className={"text-4xl mb-4 mt-6 font-semibold"}>Ingridients</div>
+                        <div className={"text-4xl mb-4 mt-6 font-semibold"}>Ingredients</div>
                         <Ingredients meals={selectedItems}/>
                     </div> :
                     <Heading text={"No selected recipes"}/>

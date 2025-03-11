@@ -19,8 +19,6 @@ function AllRecipes() {
     const filteredData = data.filter(meal => category ? meal.strCategory == category : true)
     const singlePage = generatePage(page, itemsPerPage, filteredData)
 
-    console.log(page - 1)
-
     return (
         <div className={"pb-8"}>
             <Filter/>

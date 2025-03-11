@@ -11,8 +11,13 @@ function Search() {
 
     const onSearch = useDebouncedCallback( async  (query: string) => {
         const params = new URLSearchParams(searchParams);
-        params.set('page', '1');
-        params.set('query', query);
+        if (query) {
+            params.set('page', '1');
+            params.set('query', query);
+        } else {
+            params.delete("query")
+        }
+
         navigate(`${pathname}?${params.toString()}`);
     }, 400)
 

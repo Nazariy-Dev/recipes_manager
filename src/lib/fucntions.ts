@@ -30,6 +30,7 @@ export const getAllIngridients = (meals: IRecipe[]) => {
 
 export const generatePage = (page: number, itemsPerPage: number, data: IRecipe[]) =>
 {
+    if (!data) return
     const start: number = (page - 1) * itemsPerPage
     const singlePage = data.slice(start, start + itemsPerPage)
     return singlePage

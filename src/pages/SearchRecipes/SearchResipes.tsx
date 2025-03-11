@@ -22,7 +22,7 @@ function SearchResipes() {
     return (
         <>
             <Search/>
-            <Recipes meals={singlePage}/>
+            <Recipes meals={singlePage }/>
 
             {!query && !data && <div className={"text-2xl  font-semibold text-center"}>Try searching for recipes</div>}
 
